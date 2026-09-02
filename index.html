@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Margaret Coyle | Digital Project Manager & Web Operations Specialist</title>
+<meta name="description" content="Portfolio of Margaret Coyle, Project Manager and Web Operations Specialist specializing in digital content, web operations, project management and media platforms.">
+<style>
+:root{
+  --ink:#173a3a; --teal:#006f67; --teal2:#0b8478; --gold:#f4b83f;
+  --cream:#f7f4ed; --mint:#e8f2ef; --white:#fff; --muted:#617170;
+  --shadow:0 16px 45px rgba(23,58,58,.10); --radius:20px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:var(--ink);background:#fff;line-height:1.6}
+a{color:inherit}
+.container{width:min(1120px,92%);margin:auto}
+nav{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.94);backdrop-filter:blur(12px);border-bottom:1px solid #e6ecea}
+.nav-inner{height:72px;display:flex;align-items:center;justify-content:space-between}
+.brand{font-weight:800;letter-spacing:-.03em;font-size:1.05rem}
+.brand span{color:var(--teal)}
+.nav-links{display:flex;gap:28px;font-size:.92rem;font-weight:650}
+.nav-links a{text-decoration:none}
+.nav-links a:hover{color:var(--teal)}
+.hero{background:linear-gradient(135deg,#f8f5ed 0%,#edf5f2 100%);padding:92px 0 82px;overflow:hidden}
+.hero-grid{display:grid;grid-template-columns:1.35fr .65fr;gap:60px;align-items:center}
+.eyebrow{text-transform:uppercase;letter-spacing:.15em;font-size:.75rem;font-weight:800;color:var(--teal)}
+h1{font-size:clamp(2.7rem,6vw,5.3rem);line-height:.98;letter-spacing:-.055em;margin:16px 0 24px;max-width:850px}
+.hero p{font-size:1.18rem;color:#49605f;max-width:720px}
+.ctas{display:flex;gap:14px;flex-wrap:wrap;margin-top:32px}
+.btn{display:inline-block;padding:13px 21px;border-radius:999px;text-decoration:none;font-weight:800}
+.btn.primary{background:var(--teal);color:#fff}
+.btn.secondary{border:1px solid #c6d7d3;background:#fff}
+.hero-card{background:var(--teal);color:#fff;border-radius:28px;padding:32px;box-shadow:var(--shadow);transform:rotate(2deg)}
+.hero-card .big{font-size:4.5rem;line-height:1;font-weight:900;color:var(--gold)}
+.hero-card p{color:#e4f0ee;font-size:1rem;margin:10px 0 0}
+section{padding:90px 0}
+.section-head{display:flex;justify-content:space-between;gap:40px;align-items:end;margin-bottom:38px}
+h2{font-size:clamp(2rem,4vw,3.1rem);line-height:1.05;letter-spacing:-.04em;margin:0}
+.section-head p{max-width:560px;color:var(--muted);margin:0}
+.about{background:#fff}
+.about-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:70px}
+.about-copy p{font-size:1.08rem;color:#526665}
+.skills{display:grid;gap:14px}
+.skill{padding:20px 22px;background:var(--cream);border-radius:16px}
+.skill strong{display:block;margin-bottom:5px}
+.skill span{color:#5d6f6d;font-size:.95rem}
+.projects{background:var(--mint)}
+.project-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:28px}
+.project{background:#fff;border-radius:var(--radius);overflow:hidden;box-shadow:0 8px 30px rgba(23,58,58,.08)}
+.project img{width:100%;height:330px;object-fit:cover;object-position:top;display:block}
+.project-body{padding:28px}
+.project-kicker{font-size:.72rem;text-transform:uppercase;letter-spacing:.13em;font-weight:850;color:var(--teal)}
+.project h3{font-size:1.5rem;line-height:1.15;margin:8px 0 12px}
+.project p{color:#596a68;margin:0 0 16px}
+.tags{display:flex;flex-wrap:wrap;gap:7px}
+.tag{font-size:.75rem;font-weight:700;padding:6px 10px;border-radius:999px;background:#edf4f2;color:var(--teal)}
+.no-image{min-height:210px;background:linear-gradient(135deg,var(--teal),#07524e);color:white;padding:30px;display:flex;align-items:end}
+.no-image span{font-size:1.5rem;font-weight:850;max-width:360px;line-height:1.1}
+.pm{background:#fff}
+.pm-grid{display:grid;grid-template-columns:1fr 1fr;gap:28px}
+.pm-card{border:1px solid #e1e9e6;border-radius:18px;padding:28px}
+.pm-card h3{margin-top:0}
+.pm-card ul{padding-left:20px;color:#566765}
+.contact{background:var(--teal);color:#fff}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
+.contact p{color:#dcebe8;font-size:1.08rem}
+.contact a{color:#fff}
+.contact .btn{background:var(--gold);color:#173a3a;margin-right:10px;margin-top:8px}
+footer{background:#123b3a;color:#c9d9d6;padding:25px 0;font-size:.85rem}
+@media(max-width:800px){
+  .nav-links{display:none}.hero-grid,.about-grid,.contact-grid,.pm-grid{grid-template-columns:1fr}
+  .hero{padding:65px 0}.hero-card{transform:none}
+  .project-grid{grid-template-columns:1fr}
+  section{padding:65px 0}
+}
+</style>
+</head>
+<body>
+<nav>
+  <div class="container nav-inner">
+    <div class="brand">Margaret <span>Coyle</span></div>
+    <div class="nav-links">
+      <a href="#about">About</a><a href="#work">Work</a><a href="#projects">Projects</a><a href="#contact">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="container hero-grid">
+    <div>
+      <div class="eyebrow">Digital Project Management · Web Operations · Content</div>
+      <h1>Turning complex digital work into smooth, predictable execution.</h1>
+      <p>I am a Project Manager and Web Operations Specialist with over a decade of experience bridging creative vision and technical digital execution.</p>
+      <div class="ctas">
+        <a class="btn primary" href="#projects">View My Work</a>
+        <a class="btn secondary" href="mailto:hullmeg1425@gmail.com">Let's Connect</a>
+      </div>
+    </div>
+    <div class="hero-card">
+      <div class="big">10+</div>
+      <strong>years of digital experience</strong>
+      <p>Web operations, CMS migrations, content platforms, media workflows, donation experiences and cross-functional project delivery.</p>
+    </div>
+  </div>
+</header>
+
+<section id="about" class="about">
+  <div class="container">
+    <div class="section-head">
+      <h2>About Me</h2>
+      <p>A hands-on digital professional who understands both the creative goals and the technical details needed to get work across the finish line.</p>
+    </div>
+    <div class="about-grid">
+      <div class="about-copy">
+        <p>Throughout my career with organizations like FamilyLife, Pioneers, and Wycliffe Bible Translators, I have specialized in turning complex, multi-channel initiatives into smooth, predictable workflows.</p>
+        <p>Whether directing CMS migrations, managing multi-cadence podcast platforms, optimizing donation and landing pages, or coordinating cross-functional teams of writers, designers, therapists, and web developers, I focus on delivering seamless, low-friction digital experiences.</p>
+      </div>
+      <div class="skills">
+        <div class="skill"><strong>Platform & Web Operations</strong><span>WordPress VIP, Spectra, Elementor, HTML/CSS/JS, site migrations, A/B testing, page speed optimization and basic DNS/hosting troubleshooting.</span></div>
+        <div class="skill"><strong>Content & Editorial Leadership</strong><span>Multi-channel editorial calendars, blogs, eBooks, video series, daily/weekly podcasts, metadata tagging and RSS feed syndication.</span></div>
+        <div class="skill"><strong>Project & Vendor Management</strong><span>Project intake, scope definition, timeline creation, risk mitigation and multidisciplinary contractor/vendor coordination.</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="projects" class="projects">
+  <div class="container">
+    <div class="section-head">
+      <h2>Featured Projects</h2>
+      <p>Selected examples of web implementation, digital fundraising, content experiences and platform work.</p>
+    </div>
+    <div class="project-grid">
+      <article class="project">
+        <img src="assets/familylife-content-offer.png" alt="FamilyLife content offer and donation page">
+        <div class="project-body">
+          <div class="project-kicker">FamilyLife · Content Experience</div>
+          <h3>How to Stop Yelling Up the Stairs</h3>
+          <p>Using a Figma design file, I created a content offer page with follow-up video pages for email and a donation page. The work combined content presentation, responsive implementation and conversion-focused page structure.</p>
+          <div class="tags"><span class="tag">Figma</span><span class="tag">WordPress</span><span class="tag">Responsive UX</span><span class="tag">Donation</span></div>
+        </div>
+      </article>
+
+      <article class="project">
+        <img src="assets/familylife-donation-page.png" alt="FamilyLife donation page with custom design">
+        <div class="project-body">
+          <div class="project-kicker">FamilyLife · Web Operations</div>
+          <h3>Modernized Donation Experience</h3>
+          <p>Used a Figma design to create a mobile-friendly donation page and move the ministry away from a minimal design aesthetic. Custom CSS and JavaScript were used to bring the design to life.</p>
+          <p>Also helped coordinate the migration from a deprecated donation platform to an in-house donation form, completing the project nearly half a month early so the new form could support an end-of-fiscal-year campaign.</p>
+          <div class="tags"><span class="tag">CSS</span><span class="tag">JavaScript</span><span class="tag">Figma</span><span class="tag">Project Coordination</span></div>
+        </div>
+      </article>
+
+      <article class="project">
+        <div class="no-image"><span>FamilyLife App · From Figma design to Subsplash implementation</span></div>
+        <div class="project-body">
+          <div class="project-kicker">FamilyLife · Digital Media</div>
+          <h3>FamilyLife App</h3>
+          <p>Using a Figma design file, recreated the design for an app using Subsplash, translating the visual concept into a working digital platform experience.</p>
+          <div class="tags"><span class="tag">Figma</span><span class="tag">Subsplash</span><span class="tag">Digital Content</span></div>
+        </div>
+      </article>
+
+      <article class="project">
+        <div class="no-image"><span>Website migration · SiteStaker to WordPress</span></div>
+        <div class="project-body">
+          <div class="project-kicker">Pioneers · Web Operations</div>
+          <h3>CMS Migration & Optimization</h3>
+          <p>Helped coordinate the move of a website from SiteStaker to WordPress, increasing the speed of development and improving customization and the overall site experience. Incorporated Google Analytics.</p>
+          <div class="tags"><span class="tag">WordPress</span><span class="tag">CMS Migration</span><span class="tag">Google Analytics</span></div>
+        </div>
+      </article>
+
+      <article class="project">
+        <div class="no-image"><span>Donation Form · UX Improvement</span></div>
+        <div class="project-body">
+          <div class="project-kicker">Pioneers · Conversion Experience</div>
+          <h3>Customized Donation Form</h3>
+          <p>Customized the donation form to create a more aesthetically pleasing and user-friendly experience.</p>
+          <div class="tags"><span class="tag">UX</span><span class="tag">Forms</span><span class="tag">Web Content</span></div>
+        </div>
+      </article>
+
+      <article class="project">
+        <div class="no-image"><span>Website Chat · Automated Responses</span></div>
+        <div class="project-body">
+          <div class="project-kicker">Pioneers · Digital Engagement</div>
+          <h3>Website Chat Implementation</h3>
+          <p>Embedded a chatbot into the site and customized it with autoresponses to improve visitor support and donor satisfaction.</p>
+          <div class="tags"><span class="tag">Chatbot</span><span class="tag">Web Operations</span><span class="tag">Engagement</span></div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="work" class="pm">
+  <div class="container">
+    <div class="section-head">
+      <h2>Project Management in Action</h2>
+      <p>One example of how I take an idea from conversation to coordinated delivery.</p>
+    </div>
+    <div class="pm-grid">
+      <div class="pm-card">
+        <h3>Church Relations Box</h3>
+        <ul>
+          <li>Led strategy meeting and captured notes on topics and concept.</li>
+          <li>Established timeline and set the project in Jira.</li>
+          <li>Coordinated with outsourced proofreaders and editors.</li>
+          <li>Communicated with the internal design team for layout and edits.</li>
+          <li>Obtained print quotes and helped choose the best price.</li>
+          <li>Managed communications with the print vendor and design-team approvals.</li>
+        </ul>
+      </div>
+      <div class="pm-card">
+        <h3>How I Work</h3>
+        <p>I bring structure to projects without losing sight of the creative goal. My approach centers on clear scope, realistic timelines, proactive communication, organized handoffs and early identification of risks or dependencies.</p>
+        <p><strong>Tools:</strong> Wrike, Confluence, Monday.com, Trello, Jira, MS Office / Excel and Gantt charts.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="section-head">
+      <h2>Technical Toolkit</h2>
+      <p>Tools and technologies I have worked with across web, media and project environments.</p>
+    </div>
+    <div class="skills" style="grid-template-columns:repeat(2,1fr)">
+      <div class="skill"><strong>Project Management & Collaboration</strong><span>Wrike · Confluence · Monday.com · Trello · Jira · MS Office / Excel · Gantt Charts</span></div>
+      <div class="skill"><strong>Web & Programming</strong><span>WordPress VIP · Spectra · Elementor · HTML5 · CSS3 · JavaScript · jQuery · PHP · Vue.js · Git</span></div>
+      <div class="skill"><strong>Digital Platforms & Media</strong><span>Salesforce · CMS concepts · Podcast RSS distribution platforms · Adobe Photoshop · A/B Testing</span></div>
+      <div class="skill"><strong>Digital Strategy</strong><span>UI/UX & mobile optimization · Web analytics · SEO/AEO best practices · Podcast syndication & RSS · Stakeholder communication</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <div class="container contact-grid">
+    <div>
+      <div class="eyebrow" style="color:var(--gold)">Let's Connect</div>
+      <h2 style="margin-top:10px">Have a digital project that needs structure?</h2>
+      <p>I would love to talk about how my mix of project management, web operations and content experience could support your team.</p>
+    </div>
+    <div>
+      <a class="btn" href="mailto:hullmeg1425@gmail.com">Email Me</a>
+      <a class="btn" href="https://www.linkedin.com/in/margaret-coyle-pm/" target="_blank" rel="noopener">LinkedIn</a>
+      <p style="font-size:.95rem;margin-top:22px">hullmeg1425@gmail.com</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">© 2026 Margaret Coyle · Digital Project Management & Web Operations</div>
+</footer>
+</body>
+</html>
